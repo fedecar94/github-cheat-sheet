@@ -10,7 +10,7 @@ _Lea en otros idiomas: [English](README.md), [한국어](README.ko.md), [日本�
 
 - [GitHub](#github)
   - [Ocultar espacios](#ocultar-espacios)
-  - [Adjust Tab Space](#adjust-tab-space)
+  - [Ajustar el espacio de las tabulaciones](#ajustar-el-espacio-de-las-tabulaciones)
   - [Historial de commits por autor](#historial-de-commits-por-autor)
   - [Clonar un repositorio](#Clonar-un-repositorio)
   - [Ramas](#ramas)
@@ -44,42 +44,42 @@ _Lea en otros idiomas: [English](README.md), [한국어](README.ko.md), [日本�
   - [Diffs](#diffs)
     - [Renderizado de Diff en prosa](#renderizado-de-diff-en-prosa)
     - [Diff de mapas](#diff-de-mapas)
-    - [Expanding Context in Diffs](#expanding-context-in-diffs)
-    - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
-    - [Rendering and diffing images](#rendering-and-diffing-images)
+    - [Expandir el contenido en el Diff](#expandir-el-contenido-en-el-diff)
+    - [Diff de un Pull Request](#diff-de-un-pullrequest)
+    - [Diff de imágenes](#diff-de-imágenes)
   - [Hub](#hub)
-  - [Contribution Guidelines](#contribution-guidelines)
-    - [CONTRIBUTING file](#contributing-file)
-    - [ISSUE_TEMPLATE file](#issue_template-file)
-    - [PULL_REQUEST_TEMPLATE file](#pull_request_template-file)
+  - [Pautas de contribución](#pautas-de-contribución)
+    - [El archivo CONTRIBUTING](#el-archivo-contributing)
+    - [El archivo ISSUE_TEMPLATE](#el-archivo-issue_template)
+    - [El archivo PULL_REQUEST_TEMPLATE](#el-archivo-pull_request_template)
   - [Octicons](#octicons)
   - [GitHub Student Developer Pack](#github-student-developer-pack)
-  - [GitHub Resources](#github-resources)
-    - [GitHub Talks](#github-talks)
-  - [SSH keys](#ssh-keys)
-  - [Profile Image](#profile-image)
-  - [Repository Templates](#repository-templates)
+  - [Recursos de GitHub](#recursos-de-github)
+    - [Charlas de GitHub](#charlas-de-github)
+  - [Claves SSH](#claves-SSH)
+  - [Foto de perfil](#foto-de-perfil)
+  - [Plantillas de repositorio](#plantillas-de-repositorio)
 - [Git](#git)
-  - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
-  - [Previous Branch](#previous-branch)
-  - [Stripspace](#stripspace)
-  - [Checking out Pull Requests](#checking-out-pull-requests)
-  - [Empty Commits](#empty-commits)
-  - [Styled Git Status](#styled-git-status)
-  - [Styled Git Log](#styled-git-log)
-  - [Git Query](#git-query)
-  - [Git Grep](#git-grep)
-  - [Merged Branches](#merged-branches)
-  - [Fixup and Autosquash](#fixup-and-autosquash)
-  - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
-  - [Git Configurations](#git-configurations)
-    - [Aliases](#aliases)
-    - [Auto-Correct](#auto-correct)
+  - [Borrar todos los archivos de la rama actual](#borrar-todos-los-archivos-de-la-rama-actual)
+  - [Rama anterior](#rama-anterior)
+  - [El comando Stripspace](#el-comando-stripspace)
+  - [Hacer checkout a un Pull Request](#hacer-checkout-a-un-pull-request)
+  - [Commit vacíos](#commit-vacíos)
+  - [Estilizar el estado de Git](#estilizar-el-estado-de-git)
+  - [Estilizar el log de Git](#estilizar-el-log-de-git)
+  - [Buscar un commit](#buscar-un-commit)
+  - [Buscar una linea (Grep)](#buscar-una-linea)
+  - [Ramas fusionadas](#ramas-fusionadas)
+  - [Los comandos Fixup y Autosquash](#los-comandos-fixup-y-autosquash)
+  - [Servidor web para navegar por los repositorios locales](#servidor-web-para-navegar-por-los-repositorios-locales)
+  - [Configuraciones de Git](#configuraciones-de-git)
+    - [Sobrenombres](#aliases)
+    - [Autocorrector](#autocorrector)
     - [Color](#color)
-  - [Git Resources](#git-resources)
-    - [Git Books](#git-books)
-    - [Git Videos](#git-videos)
-    - [Git Articles](#git-articles)
+  - [Recursos de Git](#recursos-de-git)
+    - [Libros](#libros)
+    - [Videos](#videos)
+    - [Artículos](#artículos)
 
 ## GitHub
 
@@ -87,25 +87,25 @@ _Lea en otros idiomas: [English](README.md), [한국어](README.ko.md), [日本�
 
 Agregando `?w=1` al final de cualquier URL removerá las lineas que solo cambiaron sus espacios, permitiendote ver solo el codigo que ha cambiado.
 
-![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
+![Diff sin espacios](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
 [_Lea más sobre GitHub secrets._](https://github.com/blog/967-github-secrets)
 
-### Adjust Tab Space
+### Ajustar el espacio de las tabulaciones
 
-Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views, but a [Chrome extension](https://chrome.google.com/webstore/detail/tab-size-on-github/ofjbgncegkdemndciafljngjbdpfmbkn) can automate this.
+Agregando `?ts=4` a un diff o a una URL de un archivo mostrará una tabulación como 4 espacios en vez de 8 que es por defecto. El número despues de `ts` te permite configurar el tamaño de tu preferencia. Esto no funciona con Gists, o archivos Raw, pero una [extensión de Chrome](https://chrome.google.com/webstore/detail/tab-size-on-github/ofjbgncegkdemndciafljngjbdpfmbkn) puede automatizar la tarea.
 
-Here is a Go source file before adding `?ts=4`:
+Aquí tienes un archivo GO antes de agregar `?ts=4`:
 
-![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
+![Antes](http://i.imgur.com/GIT1Fr0.png)
 
-...and this is after adding `?ts=4`:
+...y después de agregar `?ts=4`:
 
-![After, tab space example](http://i.imgur.com/70FL4H9.png)
+![Después](http://i.imgur.com/70FL4H9.png)
 
 ### Historial de commits por autor
 
-To view all commits on a repo by author add `?author={user}` to the URL.
+Para ver los commits de un repositorio hechos por un autor debes agregar `?author={usuario}` a la URL.
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
@@ -113,87 +113,87 @@ https://github.com/rails/rails/commits/master?author=dhh
 
 ![DHH commit history](http://i.imgur.com/S7AE29b.png)
 
-[_Lea más sobre the differences between commits views._](https://help.github.com/articles/differences-between-commit-views/)
+[_Lea más sobre las diferencias entre las vistas de commits._](https://help.github.com/articles/differences-between-commit-views/)
 
 ### Clonar un repositorio
 
-When cloning a repository the `.git` can be left off the end.
+Cuando se clona un repositorio se puede quitar el `.git` del final de la URL.
 
 ```bash
 git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
-[_Lea más sobre the Git `clone` command._](http://git-scm.com/docs/git-clone)
+[_Lea más sobre el comando `clone`._](http://git-scm.com/docs/git-clone)
 
 ### Ramas
 
 #### Comparar todas las ramas
 
-If you go to the repo's [Branches](https://github.com/tiimgreen/github-cheat-sheet/branches) page, next to the Commits button:
+Si tu vas a la vista de [Ramas](https://github.com/tiimgreen/github-cheat-sheet/branches) de un repositorio:
 
 ```
-https://github.com/{user}/{repo}/branches
+https://github.com/{usuario}/{repositorio}/branches
 ```
 
-... you would see a list of all branches which are not merged into the main branch.
+... podras visualizar todas las ramas que aun no han sido fusionadas a la rama principal.
 
-From here you can access the compare page or delete a branch with a click of a button.
+Desde aquí puedes acceder a la vista comparar o borrar de una rama solo haciendo clic sobre ella.
 
-![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
+![Comparar ramas no fusionadas del repositorio de Rails - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
 
 #### Comparar ramas
 
-To use GitHub to compare branches, change the URL to look like this:
+Para comparar ramas, cambia la URL de la siguiente forma:
 
 ```
-https://github.com/{user}/{repo}/compare/{range}
+https://github.com/{usuario}/{repositorio}/compare/{rango}
 ```
 
-where `{range} = master...4-1-stable`
+Donde `{rango} = master...4-1-stable`
 
-For example:
+Por ejemplo:
 
 ```
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
 
-![Rails branch compare example](http://i.imgur.com/tIRCOsK.png)
+![Ejemplo de comparación de dos ramas de Rails](http://i.imgur.com/tIRCOsK.png)
 
-`{range}` can be changed to things like:
+Así tambien `{rango}` puede ser:
 
 ```
 https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
-_Here, dates are in the format `YYYY-MM-DD`_
+_Aquí las fechas deben ir en el formato `YYYY-MM-DD`_
 
-![Another compare example](http://i.imgur.com/5dtzESz.png)
+![Otro ejemplo](http://i.imgur.com/5dtzESz.png)
 
-Branches can also be compared in `diff` and `patch` views:
+Las ramas tambien pueden ser comparadas en las vistas de `diff` y `patch`:
 
 ```
 https://github.com/rails/rails/compare/master...4-1-stable.diff
 https://github.com/rails/rails/compare/master...4-1-stable.patch
 ```
 
-[_Lea más sobre comparing commits across time._](https://help.github.com/articles/comparing-commits-across-time/)
+[_Lea más sobre comparar ramas a lo largo del tiempo._](https://help.github.com/articles/comparing-commits-across-time/)
 
 #### Comparar ramas a traves de un repositorio bifurcado
 
-To use GitHub to compare branches across forked repositories, change the URL to look like this:
+Puedes usar GitHub para comparar ramas a través de repositorios bifurcados, solo cambia la URL de la siguiente manera:
 
 ```
-https://github.com/{user}/{repo}/compare/{foreign-user}:{branch}...{own-branch}
+https://github.com/{usuario}/{repositorio}/compare/{usuario-externo}:{rama}}...{rama-local}
 ```
 
-For example:
+Por ejemplo:
 
 ```
 https://github.com/rails/rails/compare/byroot:master...master
 ```
 
-![Forked branch compare](http://i.imgur.com/Q1W6qcB.png)
+![Comparar ramas bifurcadas](http://i.imgur.com/Q1W6qcB.png)
 
 ### Gists
 
@@ -289,7 +289,7 @@ This closes the issue and references the closing commit.
 
 If you want to link to another issue in the same repository, simply type hash `#` then the issue number, and it will be auto-linked.
 
-To link to an issue in another repository, `{user}/{repo}#ISSUE_NUMBER`, e.g., `tiimgreen/toc#12`.
+To link to an issue in another repository, `{usuario}/{repositorio}#ISSUE_NUMBER`, e.g., `tiimgreen/toc#12`.
 
 ![Enlazar issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -394,7 +394,7 @@ Images and GIFs can be added to comments, READMEs etc.:
 Raw images from the repo can be used by calling them directly.:
 
 ```
-![Alt Text](https://github.com/{user}/{repo}/raw/master/path/to/image.gif)
+![Alt Text](https://github.com/{usuario}/{repositorio}/raw/master/path/to/image.gif)
 ```
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
@@ -574,18 +574,18 @@ Any time you view a commit or pull request on GitHub that includes geodata, GitH
 
 [_Lea más sobre diffable maps._](https://github.com/blog/1772-diffable-more-customizable-maps)
 
-#### Expanding Context in Diffs
+#### Expandir el contenido en el Diff
 
 Using the _unfold_ button in the gutter of a diff, you can reveal additional lines of context with a click. You can keep clicking _unfold_ until you've revealed the whole file, and the feature is available anywhere GitHub renders diffs.
 
-![Expanding Context in Diffs](https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif)
+![Expandir el contenido en el Diff](https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif)
 
 [_Lea más sobre expanding context in diffs._](https://github.com/blog/1705-expanding-context-in-diffs)
 
-#### Diff or Patch of Pull Request
+#### Diff de un Pull Request
 
 You can get the diff of a Pull Request by adding a `.diff` or `.patch`
-extension to the end of the URL. For example:
+extension to the end of the URL. Por ejemplo:
 
 ```
 https://github.com/tiimgreen/github-cheat-sheet/pull/15
@@ -614,7 +614,7 @@ index 88fcf69..8614873 100644
 (...)
 ```
 
-#### Rendering and diffing images
+#### Diff de imágenes
 
 GitHub can display several common image formats, including PNG, JPG, GIF, and PSD. In addition, there are several ways to compare differences between versions of those image formats.
 
@@ -634,20 +634,20 @@ hub clone tiimgreen/toc
 
 [_Check out some more cool commands Hub has to offer._](https://github.com/github/hub#commands)
 
-### Contribution Guidelines
+### Pautas de contribución
 
 GitHub supports adding 3 different files which help users contribute to your project.
 These files can either be placed in the root of your repository or a `.github` directory under the root.
 
-#### CONTRIBUTING File
+#### El archivo CONTRIBUTING
 
-Adding a `CONTRIBUTING` or `CONTRIBUTING.md` file to either the root of your repository or a `.github` directory will add a link to your file when a contributor creates an Issue or opens a Pull Request.
+Agregando a `CONTRIBUTING` or `CONTRIBUTING.md` file to either the root of your repository or a `.github` directory will add a link to your file when a contributor creates an Issue or opens a Pull Request.
 
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
 [_Lea más sobre contributing guidelines._](https://github.com/blog/1184-contributing-guidelines)
 
-#### ISSUE_TEMPLATE file
+#### El archivo ISSUE_TEMPLATE
 
 You can define a template for all new issues opened in your project. The content of this file will pre-populate the new issue box when users create new issues. Add an `ISSUE_TEMPLATE` or `ISSUE_TEMPLATE.md` file to either the root of your repository or a `.github` directory.
 
@@ -657,7 +657,7 @@ You can define a template for all new issues opened in your project. The content
 
 ![GitHub Issue template](https://cloud.githubusercontent.com/assets/25792/13120859/733479fe-d564-11e5-8a1f-a03f95072f7a.png)
 
-#### PULL_REQUEST_TEMPLATE file
+#### El archivo PULL_REQUEST_TEMPLATE
 
 You can define a template for all new pull requests opened in your project. The content of this file will pre-populate the text area when users create pull requests. Add a `PULL_REQUEST_TEMPLATE` or `PULL_REQUEST_TEMPLATE.md` file to either the root of your repository or a `.github` directory.
 
@@ -681,7 +681,7 @@ If you are a student you will be eligible for the GitHub Student Developer Pack.
 
 [_Lea más sobre GitHub's Student Developer Pack_](https://education.github.com/pack)
 
-### GitHub Resources
+### Recursos de GitHub
 
 | Title                                                              | Link                                                                         |
 | ------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
@@ -693,7 +693,7 @@ If you are a student you will be eligible for the GitHub Student Developer Pack.
 | Github Education (Free Micro Account and other stuff for students) | <https://education.github.com/>                                              |
 | GitHub Best Practices                                              | [Best Practices List](https://www.datree.io/resources/github-best-practices) |
 
-#### GitHub Talks
+#### Charlas de GitHub
 
 | Title                                           | Link                                          |
 | ----------------------------------------------- | --------------------------------------------- |
@@ -703,29 +703,29 @@ If you are a student you will be eligible for the GitHub Student Developer Pack.
 | Git and GitHub Secrets                          | <https://www.youtube.com/watch?v=Foz9yvMkvlA> |
 | More Git and GitHub Secrets                     | <https://www.youtube.com/watch?v=p50xsL-iVgU> |
 
-### SSH keys
+### Claves SSH
 
 You can get a list of public ssh keys in plain text format by visiting:
 
 ```
-https://github.com/{user}.keys
+https://github.com/{usuario}.keys
 ```
 
 e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
 
 [_Lea más sobre accessing public ssh keys._](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
 
-### Profile Image
+### Foto de perfil
 
 You can get a user's profile image by visiting:
 
 ```
-https://github.com/{user}.png
+https://github.com/{usuario}.png
 ```
 
 e.g. [https://github.com/tiimgreen.png](https://github.com/tiimgreen.png)
 
-### Repository Templates
+### Plantillas de repositorio
 
 You can enable templating on your repository which allows anyone to copy the directory structure and files, allowing them to instantly use the files (e.g. for a tutorial or if writing boilerplate code). This can be enabled in the settings of your repository.
 
@@ -739,7 +739,7 @@ Changing to a template repository will give a new URL endpoint which can be shar
 
 ## Git
 
-### Remove All Deleted Files from the Working Tree
+### Borrar todos los archivos de la rama actual
 
 When you delete a lot of files using `/bin/rm` you can use the following command to remove them from the working tree and from the index, eliminating the need to remove each one individually:
 
@@ -747,7 +747,7 @@ When you delete a lot of files using `/bin/rm` you can use the following command
 git rm $(git ls-files -d)
 ```
 
-For example:
+Por ejemplo:
 
 ```bash
 $ git status
@@ -767,7 +767,7 @@ Changes to be committed:
  deleted:    c
 ```
 
-### Previous Branch
+### Rama anterior
 
 To move to the previous branch in Git:
 
@@ -784,7 +784,7 @@ $ git checkout -
 
 [_Lea más sobre Git branching._](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
 
-### Stripspace
+### El comando Stripspace
 
 Git Stripspace:
 
@@ -800,7 +800,7 @@ git stripspace < README.md
 
 [_Lea más sobre the Git `stripspace` command._](http://git-scm.com/docs/git-stripspace)
 
-### Checking out Pull Requests
+### Hacer checkout a un Pull Request
 
 Pull Requests are special branches on the GitHub repository which can be retrieved locally in several ways:
 
@@ -855,7 +855,7 @@ git checkout pr/42
 
 [_Lea más sobre checking out pull requests locally._](https://help.github.com/articles/checking-out-pull-requests-locally/)
 
-### Empty Commits
+### Commit vacíos
 
 Commits can be pushed with no code changes by adding `--allow-empty`:
 
@@ -870,7 +870,7 @@ Some use-cases for this (that make sense), include:
 - Communicating with people using your repository.
 - The first commit of a repository: `git commit -m "Initial commit" --allow-empty`.
 
-### Styled Git Status
+### Estilizar el estado de Git
 
 Running:
 
@@ -894,7 +894,7 @@ this is produced:
 
 [_Lea más sobre the Git `status` command._](http://git-scm.com/docs/git-status)
 
-### Styled Git Log
+### Estilizar el log de Git
 
 Running:
 
@@ -912,7 +912,7 @@ _This can be aliased using the instructions found [here](https://github.com/tiim
 
 [_Lea más sobre the Git `log` command._](http://git-scm.com/docs/git-log)
 
-### Git Query
+### Buscar un commit
 
 A Git query allows you to search all your previous commit messages and find the most recent one matching the query.
 
@@ -930,7 +930,7 @@ git show :/typo
 
 _Press `q` to quit._
 
-### Git Grep
+### Buscar una linea
 
 Git Grep will return a list of lines matching a pattern.
 
@@ -946,7 +946,7 @@ will show all the files containing the string _aliases_.
 
 _Press `q` to quit._
 
-You can also use multiple flags for more advanced search. For example:
+You can also use multiple flags for more advanced search. Por ejemplo:
 
 - `-e` The next parameter is the pattern (e.g., regex)
 - `--and`, `--or` and `--not` Combine multiple patterns.
@@ -959,7 +959,7 @@ Use it like this:
 
 [_Lea más sobre the Git `grep` command._](http://git-scm.com/docs/git-grep)
 
-### Merged Branches
+### Ramas fusionadas
 
 Running:
 
@@ -979,7 +979,7 @@ will give you a list of branches that have not been merged into your current bra
 
 [_Lea más sobre the Git `branch` command._](http://git-scm.com/docs/git-branch)
 
-### Fixup and Autosquash
+### Los comandos Fixup y Autosquash
 
 If there is something wrong with a previous commit (can be one or more from HEAD), for example `abcde`, run the following command after you've amended the problem:
 
@@ -991,7 +991,7 @@ git rebase abcde^ --autosquash -i
 [_Lea más sobre the Git `commit` command._](http://git-scm.com/docs/git-commit)
 [_Lea más sobre the Git `rebase` command._](http://git-scm.com/docs/git-rebase)
 
-### Web Server for Browsing Local Repositories
+### Servidor web para navegar por los repositorios locales
 
 Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
 
@@ -1005,11 +1005,11 @@ opens:
 
 [_Lea más sobre the Git `instaweb` command._](http://git-scm.com/docs/git-instaweb)
 
-### Git Configurations
+### Configuraciones de Git
 
 Your `.gitconfig` file contains all your Git configurations.
 
-#### Aliases
+#### Sobrenombres
 
 Aliases are helpers that let you define your own git calls. For example you could set `git a` to run `git add --all`.
 
@@ -1032,7 +1032,7 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
 git config --global alias.new_alias git_function
 ```
 
-For example:
+Por ejemplo:
 
 ```bash
 git config --global alias.cm commit
@@ -1060,7 +1060,7 @@ Some useful aliases include:
 
 _Some Aliases are taken from [@mathiasbynens](https://github.com/mathiasbynens) dotfiles: <https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig>_
 
-#### Auto-Correct
+#### Autocorrector
 
 Git gives suggestions for misspelled commands and if auto-correct is enabled the command can be fixed and executed automatically. Auto-correct is enabled by specifying an integer which is the delay in tenths of a second before git will run the corrected command. Zero is the default value where no correcting will take place, and a negative value will run the corrected command with no delay.
 
@@ -1101,7 +1101,7 @@ git config --global color.ui 1
 
 [_Lea más sobre the Git `config` command._](http://git-scm.com/docs/git-config)
 
-### Git Resources
+### Recursos de Git
 
 | Title                                                  | Link                                                      |
 | ------------------------------------------------------ | --------------------------------------------------------- |
@@ -1120,7 +1120,7 @@ git config --global color.ui 1
 | A collection of useful .gitignore templates            | <https://github.com/github/gitignore>                     |
 | Unixorn's git-extra-commands collection of git scripts | <https://github.com/unixorn/git-extra-commands>           |
 
-#### Git Books
+#### Libros
 
 | Title                               | Link                                                                                |
 | ----------------------------------- | ----------------------------------------------------------------------------------- |
@@ -1132,7 +1132,7 @@ git config --global color.ui 1
 | Pragmatic Guide to Git              | <https://pragprog.com/titles/pg_git/pragmatic-guide-to-git>                         |
 | Git: Version Control for Everyone   | <https://www.packtpub.com/application-development/git-version-control-everyone>     |
 
-#### Git Videos
+#### Videos
 
 | Title                                   | Link                                                                                  |
 | --------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -1142,7 +1142,7 @@ git config --global color.ui 1
 | Graphs, Hashes, and Compression, Oh My! | <https://www.youtube.com/watch?v=ig5E8CcdM9g>                                         |
 | GitHub Training & Guides                | <https://www.youtube.com/watch?list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-&v=FyfwLX4HAxM> |
 
-#### Git Articles
+#### Artículos
 
 | Title                                         | Link                                                                                                                             |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
